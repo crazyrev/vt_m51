@@ -19,9 +19,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/m51/proprietary/vendor/etc/sensors/config/lito_mmc5603x_1.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_mmc5603x_1.json \
     vendor/samsung/m51/proprietary/vendor/etc/sensors/config/lito_mmc5603x_2.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_mmc5603x_2.json \
     vendor/samsung/m51/proprietary/vendor/etc/sensors/config/lito_mmc5603x_3.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lito_mmc5603x_3.json \
-	vendor/samsung/m51/proprietary/vendor/etc/sensors/config/lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0.json \
+    vendor/samsung/m51/proprietary/vendor/etc/sensors/config/lsm6dsm_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dsm_0.json \
     vendor/samsung/m51/proprietary/vendor/lib/hw/com.samsung.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.samsung.chi.override.so \
     vendor/samsung/m51/proprietary/vendor/lib/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libegis_fp_normal_sensor_test.so \
     vendor/samsung/m51/proprietary/vendor/lib64/hw/com.samsung.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.samsung.chi.override.so \
     vendor/samsung/m51/proprietary/vendor/lib64/libegis_fp_normal_sensor_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libegis_fp_normal_sensor_test.so
-    
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/samsung/m51/proprietary/vendor/lib/camera,$(TARGET_COPY_OUT_VENDOR)/lib/camera) \
+$(call find-copy-subdir-files,*,vendor/samsung/m51/proprietary/vendor/lib64/camera,$(TARGET_COPY_OUT_VENDOR)/lib64/camera) \
