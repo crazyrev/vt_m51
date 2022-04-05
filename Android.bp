@@ -4,7 +4,7 @@
 
 soong_namespace {
 }
-
+/*
 cc_prebuilt_library_shared {
 	name: "libril",
 	owner: "samsung",
@@ -24,7 +24,7 @@ cc_prebuilt_library_shared {
 	prefer: true,
 	soc_specific: true,
 }
-
+*/
 cc_prebuilt_library_shared {
 	name: "libskeymaster4device",
 	owner: "samsung",
